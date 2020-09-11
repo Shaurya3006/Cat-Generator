@@ -1,0 +1,53 @@
+body{
+	background: linear-gradient(to right,red,yellow);
+}
+.container {
+	border: 2px solid black;
+	text-align: center;
+}
+.flex-box-container-2{
+	border: 2px solid black;
+	text-align: center;
+
+}
+.flex-box-result{
+	display: flex;
+	padding: 10px;
+	border: 1px solid black;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+}
+h1{
+	background-color: white;
+	animation-name: move;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	text-transform: uppercase;
+}
+@keyframes move{
+	0%{
+		background-color: white; 
+		color: red;
+
+	}
+	25%{
+		background-color: yellow;
+		color: green;
+	}
+	50%{
+		background-color: red;
+		color: white;
+	}
+	75%{
+		background-color: green;
+		color: yellow;
+	}
+	100%{
+		background-color: white;
+		color: red;
+	}
+
+
+}
